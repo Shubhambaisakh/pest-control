@@ -18,7 +18,7 @@ export default function Features() {
         {/* Stats bar */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-14 bg-brand-50 rounded-2xl p-8">
           {[
-            { value: '25+', label: 'Years Experience' },
+            { value: '10+', label: 'Years Experience' },
             { value: '10K+', label: 'Happy Customers' },
             { value: '9+', label: 'Pest Services' },
             { value: '100%', label: 'Satisfaction Guaranteed' },
@@ -44,3 +44,4 @@ export default function Features() {
     </section>
   );
 }
+

@@ -98,7 +98,7 @@ export default function Hero({ headline, subheadline, ctaLabel, ctaHref }: HeroP
           <div className="absolute bottom-4 left-4 bg-white text-gray-800 rounded-xl px-5 py-3 shadow-xl flex items-center gap-3">
             <span className="text-2xl">🏆</span>
             <div>
-              <p className="text-lg font-extrabold text-brand-600 leading-none">25+ Years</p>
+              <p className="text-lg font-extrabold text-brand-600 leading-none">10+ Years</p>
               <p className="text-xs text-gray-500 mt-0.5">of Experience</p>
             </div>
           </div>
@@ -108,3 +108,4 @@ export default function Hero({ headline, subheadline, ctaLabel, ctaHref }: HeroP
     </section>
   );
 }
+

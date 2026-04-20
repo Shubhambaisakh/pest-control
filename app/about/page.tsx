@@ -57,7 +57,7 @@ export default function AboutPage() {
                 unoptimized
               />
             </div>
-            <p className="text-5xl font-bold text-brand-600">25+</p>
+            <p className="text-5xl font-bold text-brand-600">10+</p>
             <p className="text-gray-600 mb-6">Years of Experience</p>
             <p className="text-5xl font-bold text-brand-600">10,000+</p>
             <p className="text-gray-600 mb-6">Happy Customers</p>
@@ -156,7 +156,7 @@ export default function AboutPage() {
       <section className="bg-brand-600 text-white py-16 px-4 text-center">
         <h2 className="text-3xl font-bold mb-4">Ready to Work With Us?</h2>
         <p className="text-brand-100 mb-2">Call us toll-free or send us a message today.</p>
-        <p className="text-2xl font-bold mb-8">
+        <p className="text-2xl font-bold">
           <a href="tel:18003094947" className="hover:underline">1800-309-4947</a>
         </p>
         <Link
@@ -169,3 +169,4 @@ export default function AboutPage() {
     </main>
   );
 }
+

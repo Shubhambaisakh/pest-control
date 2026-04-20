@@ -246,3 +246,4 @@ export const teamMembers: TeamMember[] = [
     imageSrc: '/images/team-placeholder.jpg',
   },
 ];
+

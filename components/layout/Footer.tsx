@@ -62,7 +62,8 @@ export default function Footer() {
               <li className="flex items-start gap-2">
                 <span>📍</span>
                 <span className="text-brand-200 text-xs leading-relaxed">
-                  Above Jio Office, Near National Highway,<br />
+                  Shop No. 01, First Floor 7-B, NH-12,<br />
+                  Near Union Bank of India,<br />
                   Indra Nagar, Mandideep,<br />
                   Bhopal (M.P.) 462046
                 </span>
@@ -101,3 +102,4 @@ export default function Footer() {
     </footer>
   );
 }
+

@@ -7,6 +7,7 @@ import Gallery from '@/components/home/Gallery';
 import Promise from '@/components/home/Promise';
 import ClientsCarousel from '@/components/home/ClientsCarousel';
 import HowItWorks from '@/components/home/HowItWorks';
+import Certifications from '@/components/home/Certifications';
 
 export default function HomePage() {
   return (
@@ -23,6 +24,7 @@ export default function HomePage() {
       <Gallery />
       <HowItWorks />
       <ClientsCarousel />
+      <Certifications />
       <Testimonials />
       <section className="bg-brand-600 text-white py-16 px-4 text-center">
         <h2 className="text-3xl font-bold mb-4">Ready to Live Pest-Free?</h2>
