@@ -2,14 +2,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const GALLERY_IMAGES = [
-  {
-    src: 'https://ppci.in/wp-content/uploads/2024/01/IMG-20240110-WA0030.jpg',
-    alt: 'PPCI technician performing pest control treatment',
-  },
-  {
-    src: 'https://ppci.in/wp-content/uploads/2024/01/IMG-20240110-WA0027.jpg',
-    alt: 'PPCI pest control work at client premises',
-  },
+  { src: '/pest control1.webp', alt: 'PPCI technician performing pest control fogging treatment' },
+  { src: '/pest control2.webp', alt: 'PPCI pest control treatment at client premises' },
+  { src: '/pest control 3.webp', alt: 'PPCI certified technician at work in Bhopal' },
 ];
 
 export default function Gallery() {
@@ -26,7 +21,7 @@ export default function Gallery() {
           Real work by our certified technicians across Bhopal &amp; Mandideep
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
           {GALLERY_IMAGES.map((img) => (
             <div
               key={img.src}
@@ -48,7 +43,7 @@ export default function Gallery() {
         <div className="relative rounded-2xl overflow-hidden shadow-xl">
           <div className="relative w-full" style={{ aspectRatio: '16/5' }}>
             <Image
-              src="https://ppci.in/wp-content/uploads/2022/03/1-1-768x384.png"
+              src="/Untitled-design-1280x640.jpg"
               alt="PPCI Limited Time Offer — Best Pest Control in Bhopal"
               fill
               className="object-cover"

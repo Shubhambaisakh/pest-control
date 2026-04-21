@@ -28,11 +28,11 @@ export default function Hero({ headline, subheadline, ctaLabel, ctaHref }: HeroP
           priority
           unoptimized
         />
-        {/* Heavy overlay so background image is subtle/faded */}
-        <div className="absolute inset-0 bg-brand-700/85" />
+        {/* Lime overlay */}
+        <div className="absolute inset-0 bg-brand-500/85" />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 py-16 md:py-20 flex flex-col md:flex-row items-center gap-12">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 py-16 md:py-20 flex flex-col md:flex-row items-center gap-12 text-brand-900">
 
         {/* ── Left column ── */}
         <div className="flex-1 flex flex-col items-start">
@@ -40,11 +40,11 @@ export default function Hero({ headline, subheadline, ctaLabel, ctaHref }: HeroP
             🌿 Eco-Friendly Solutions
           </span>
 
-          <h1 className="text-4xl md:text-5xl font-extrabold leading-tight mb-5">
+          <h1 className="text-4xl md:text-5xl font-extrabold leading-tight mb-5 text-brand-900">
             {headline}
           </h1>
 
-          <p className="text-brand-100 text-base md:text-lg leading-relaxed mb-7 max-w-md">
+          <p className="text-brand-900/80 text-base md:text-lg leading-relaxed mb-7 max-w-md">
             {subheadline}
           </p>
 
@@ -64,21 +64,21 @@ export default function Hero({ headline, subheadline, ctaLabel, ctaHref }: HeroP
           <div className="flex flex-wrap gap-4">
             <Link
               href={ctaHref}
-              className="inline-flex items-center gap-2 bg-white text-brand-700 font-semibold px-7 py-3 rounded-full hover:bg-brand-50 transition-colors duration-300 shadow-md text-sm md:text-base"
+              className="inline-flex items-center gap-2 bg-brand-900 text-white font-semibold px-7 py-3 rounded-full hover:bg-brand-700 transition-colors duration-300 shadow-md text-sm md:text-base"
             >
               {ctaLabel} →
             </Link>
             <Link
               href="/services"
-              className="inline-flex items-center gap-2 border-2 border-white text-white font-semibold px-7 py-3 rounded-full hover:bg-brand-700 transition-colors duration-300 text-sm md:text-base"
+              className="inline-flex items-center gap-2 border-2 border-brand-900 text-brand-900 font-semibold px-7 py-3 rounded-full hover:bg-brand-700 hover:text-white transition-colors duration-300 text-sm md:text-base"
             >
               Our Services
             </Link>
           </div>
 
           {/* Toll-free number */}
-          <p className="mt-8 text-brand-100 text-sm">
-            📞 Toll Free: <a href="tel:18003094947" className="font-bold text-white hover:underline">1800-309-4947</a>
+          <p className="mt-8 text-brand-900/80 text-sm">
+            📞 Toll Free: <a href="tel:18003094947" className="font-bold text-brand-900 hover:underline">1800-309-4947</a>
           </p>
         </div>
 

@@ -12,22 +12,22 @@ export default function ServicesPage() {
   return (
     <>
       {/* Page Header with real PPCI photo background */}
-      <section className="relative bg-brand-700 text-white py-20 px-4 text-center overflow-hidden">
+      <section className="relative bg-brand-500 text-brand-900 py-20 px-4 text-center overflow-hidden">
         {/* Background image */}
         <div className="absolute inset-0">
           <Image
-            src="https://ppci.in/wp-content/uploads/2024/01/IMG-20240110-WA0030.jpg"
+            src="/pest control1.webp"
             alt="PPCI pest control work"
             fill
-            className="object-cover opacity-20"
+            className="object-cover opacity-15"
             unoptimized
           />
         </div>
         <div className="relative z-10">
-          <p className="text-brand-200 text-sm mb-2">
+          <p className="text-brand-900/70 text-sm mb-2">
             <Link href="/" className="hover:underline">Home</Link> / Services
           </p>
-          <h1 className="text-4xl font-bold mb-4">Our Pest Control Services</h1>
+          <h1 className="text-4xl font-bold mb-4 text-brand-900">Our Pest Control Services</h1>
           <p className="text-brand-100 text-lg">
             We Provide Complete Pest Control Solutions — Residential &amp; Commercial
           </p>
@@ -62,10 +62,11 @@ export default function ServicesPage() {
       <section className="bg-white py-12 px-4">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-2xl font-bold text-gray-800 text-center mb-8">Our Work in Action</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { src: 'https://ppci.in/wp-content/uploads/2024/01/IMG-20240110-WA0030.jpg', alt: 'PPCI technician at work' },
-              { src: 'https://ppci.in/wp-content/uploads/2024/01/IMG-20240110-WA0027.jpg', alt: 'PPCI pest control treatment' },
+              { src: '/pest control1.webp', alt: 'PPCI technician fogging treatment' },
+              { src: '/pest control2.webp', alt: 'PPCI pest control treatment' },
+              { src: '/pest control 3.webp', alt: 'PPCI certified technician at work' },
             ].map((img) => (
               <div key={img.src} className="relative rounded-2xl overflow-hidden shadow-md" style={{ aspectRatio: '16/9' }}>
                 <Image src={img.src} alt={img.alt} fill className="object-cover" unoptimized />

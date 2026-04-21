@@ -52,8 +52,8 @@ export default function Navbar() {
                   href={link.href}
                   className={
                     isActive(link.href)
-                      ? 'bg-brand-500 text-white rounded px-3 py-1'
-                      : 'text-gray-700 hover:text-brand-600 px-3 py-1'
+                      ? 'bg-brand-500 text-brand-900 font-bold rounded px-3 py-1'
+                      : 'text-gray-700 hover:text-brand-700 px-3 py-1'
                   }
                 >
                   {link.label}
@@ -82,8 +82,8 @@ export default function Navbar() {
                   onClick={() => setIsOpen(false)}
                   className={
                     isActive(link.href)
-                      ? 'block bg-brand-500 text-white rounded px-3 py-2'
-                      : 'block text-gray-700 hover:text-brand-600 px-3 py-2'
+                      ? 'block bg-brand-500 text-brand-900 font-bold rounded px-3 py-2'
+                      : 'block text-gray-700 hover:text-brand-700 px-3 py-2'
                   }
                 >
                   {link.label}

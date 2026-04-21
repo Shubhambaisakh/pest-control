@@ -19,12 +19,12 @@ export default function AboutPage() {
   return (
     <main>
       {/* Page Header */}
-      <section className="bg-brand-700 text-white py-16 px-4 text-center">
-        <p className="text-brand-200 text-sm mb-2">
+      <section className="bg-brand-500 text-brand-900 py-16 px-4 text-center">
+        <p className="text-brand-900/70 text-sm mb-2">
           <Link href="/" className="hover:underline">Home</Link> / About Us
         </p>
         <h1 className="text-4xl font-bold mb-4">About Pari Pest Control India</h1>
-        <p className="text-brand-100 text-lg">PPCI Pvt. Ltd. — Best Pest Control in Bhopal</p>
+        <p className="text-brand-900/80 text-lg">PPCI Pvt. Ltd. — Best Pest Control in Bhopal</p>
       </section>
 
       {/* Who We Are */}
@@ -47,11 +47,11 @@ export default function AboutPage() {
             </blockquote>
           </div>
           <div className="bg-brand-50 rounded-2xl p-8 text-center">
-            {/* Real PPCI work photo */}
+            {/* Real PPCI team photo */}
             <div className="relative w-full rounded-xl overflow-hidden mb-6 shadow-md" style={{ aspectRatio: '4/3' }}>
               <Image
-                src="https://ppci.in/wp-content/uploads/2024/01/IMG-20240110-WA0027.jpg"
-                alt="PPCI technician performing pest control"
+                src="/photo.jpg"
+                alt="PPCI team at office Bhopal"
                 fill
                 className="object-cover"
                 unoptimized
@@ -107,9 +107,8 @@ export default function AboutPage() {
       </section>
 
       {/* Core Values */}
-      <section className="bg-brand-700 py-16 px-4">
-        <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-white mb-10">Our Core Values</h2>
+      <section className="bg-brand-500 text-brand-900 py-16 px-4 text-center">
+        <h2 className="text-3xl font-bold mb-4">Our Core Values</h2>
           <div className="flex flex-wrap justify-center gap-6">
             {VALUES.map((v) => (
               <div key={v.label} className="bg-white rounded-xl px-8 py-5 flex flex-col items-center gap-2 shadow-md min-w-[120px]">
@@ -131,6 +130,24 @@ export default function AboutPage() {
           <p className="text-gray-600 leading-relaxed text-lg">
             When it comes to pest control, we rely only on an experienced team like PPCI.
           </p>
+        </div>
+      </section>
+
+      {/* Work Photos */}
+      <section className="bg-gray-50 py-12 px-4">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-2xl font-bold text-gray-800 text-center mb-8">Our Work</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[
+              { src: '/pest control1.webp', alt: 'PPCI fogging treatment' },
+              { src: '/pest control2.webp', alt: 'PPCI pest control at work' },
+              { src: '/pest control 3.webp', alt: 'PPCI technician in action' },
+            ].map((img) => (
+              <div key={img.src} className="relative rounded-2xl overflow-hidden shadow-md" style={{ aspectRatio: '4/3' }}>
+                <Image src={img.src} alt={img.alt} fill className="object-cover hover:scale-105 transition-transform duration-500" unoptimized />
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
